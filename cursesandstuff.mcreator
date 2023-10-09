@@ -3,9 +3,135 @@
     {
       "name": "Cursedseller",
       "type": "villagerprofession",
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cursedseller",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "CursePage1",
+      "type": "gui",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_page_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cursesandstuff/client/gui/CursePage1Screen.java",
+          "src/main/java/net/mcreator/cursesandstuff/network/CursePage1ButtonMessage.java",
+          "src/main/java/net/mcreator/cursesandstuff/world/inventory/CursePage1Menu.java"
+        ]
+      }
+    },
+    {
+      "name": "CursePage2",
+      "type": "gui",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_page_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cursesandstuff/client/gui/CursePage2Screen.java",
+          "src/main/java/net/mcreator/cursesandstuff/world/inventory/CursePage2Menu.java",
+          "src/main/java/net/mcreator/cursesandstuff/network/CursePage2ButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "OpenPage2",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_page_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cursesandstuff/procedures/OpenPage2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenPage1",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_page_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cursesandstuff/procedures/OpenPage1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CursedGuide",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_guide",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cursesandstuff/models/item/cursed_guide.json",
+          "src/main/java/net/mcreator/cursesandstuff/item/CursedGuideItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Bookofdetails",
+      "type": "villagertrade",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bookofdetails",
       "metadata": {
         "files": []
       }
@@ -15,7 +141,14 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "entity.minecraft.villager.cursesandstuff.cursedseller": "Cursed Professer"
+      "gui.cursesandstuff.curse_page_1.button_next": "Next -\u003e",
+      "item.cursesandstuff.cursed_guide": "Book of Curses",
+      "gui.cursesandstuff.curse_page_2.label_the_limitless_technique": "The Limitless Technique:",
+      "gui.cursesandstuff.curse_page_1.label_book_of_techniques": "Book of Techniques",
+      "entity.minecraft.villager.cursesandstuff.cursedseller": "Cursed Professer",
+      "gui.cursesandstuff.curse_page_2.label_this_is_a_placeholder_for_the_te": "This is a placeholder for the text to come!",
+      "gui.cursesandstuff.curse_page_1.label_this_is_a_place_holder_for_the_t": "This is a place holder for the text to come!",
+      "gui.cursesandstuff.curse_page_2.button_previous": "\u003c- Previous"
     }
   },
   "foldersRoot": {

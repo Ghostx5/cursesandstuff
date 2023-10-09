@@ -30,6 +30,9 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.cursesandstuff.init.CursesandstuffModVillagerProfessions;
+import net.mcreator.cursesandstuff.init.CursesandstuffModTabs;
+import net.mcreator.cursesandstuff.init.CursesandstuffModMenus;
+import net.mcreator.cursesandstuff.init.CursesandstuffModItems;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -49,8 +52,12 @@ public class CursesandstuffMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		CursesandstuffModVillagerProfessions.PROFESSIONS.register(bus);
+		CursesandstuffModItems.REGISTRY.register(bus);
 
+		CursesandstuffModTabs.REGISTRY.register(bus);
+
+		CursesandstuffModVillagerProfessions.PROFESSIONS.register(bus);
+		CursesandstuffModMenus.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";
