@@ -1,0 +1,16 @@
+{
+  "_fv": 47,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Cursed Professer",
+    "pointOfInterest": {
+      "value": "Blocks.SOUL_CAMPFIRE"
+    },
+    "actionSound": {
+      "value": "music.overworld.deep_dark"
+    },
+    "hat": "None",
+    "professionTextureFile": "vil1.png",
+    "zombifiedProfessionTextureFile": "zomvil1.png"
+  }
+}

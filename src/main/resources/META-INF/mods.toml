@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="cursesandstuff"
+version="0.0.1"
+displayName="cursesandstuff"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+authors="Ghostx10"
+description="Adds cursed techniques and more from Jujitsu Kaisen!"
+
+[[dependencies.cursesandstuff]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
