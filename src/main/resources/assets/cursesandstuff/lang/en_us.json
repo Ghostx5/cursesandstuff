@@ -1,13 +1,14 @@
 {
   "advancements.begin_curses.descr": "Get the cursed guide from the cursed professer.",
-  "biome.cursesandstuff.corruptedzone": "Corruption Zone",
+  "key.cursesandstuff.reset_data": "Reset Data",
   "gui.cursesandstuff.curse_page_1.button_next": "Next -\u003e",
-  "item.cursesandstuff.cursed_guide": "Book of Curses",
   "gui.cursesandstuff.curse_page_2.label_the_limitless_technique": "The Limitless Technique:",
+  "gui.cursesandstuff.curse_page_2.label_this_is_a_placeholder_for_the_te": "This is a placeholder for the text to come!",
+  "gui.cursesandstuff.curse_page_2.button_previous": "\u003c- Previous",
+  "biome.cursesandstuff.corruptedzone": "Corruption Zone",
+  "item.cursesandstuff.cursed_guide": "Book of Curses",
   "gui.cursesandstuff.curse_page_1.label_book_of_techniques": "Book of Techniques",
   "entity.minecraft.villager.cursesandstuff.cursedseller": "Cursed Professer",
   "advancements.begin_curses.title": "It\u0027s just the beginning...",
-  "gui.cursesandstuff.curse_page_2.label_this_is_a_placeholder_for_the_te": "This is a placeholder for the text to come!",
-  "gui.cursesandstuff.curse_page_1.label_this_is_a_place_holder_for_the_t": "This is a place holder for the text to come!",
-  "gui.cursesandstuff.curse_page_2.button_previous": "\u003c- Previous"
+  "gui.cursesandstuff.curse_page_1.label_this_is_a_place_holder_for_the_t": "This is a place holder for the text to come!"
 }

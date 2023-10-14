@@ -163,23 +163,160 @@
           "src/main/resources/data/cursesandstuff/worldgen/placed_feature/corruptedzone_tree.json"
         ]
       }
+    },
+    {
+      "name": "GiveEnergy",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_energy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cursesandstuff/procedures/GiveEnergyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CEnergyBar",
+      "type": "overlay",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "c_energy_bar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cursesandstuff/client/screens/CEnergyBarOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "ReturnNumber",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_number",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/cursesandstuff/procedures/ReturnNumberProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ResetEnergy",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_energy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cursesandstuff/procedures/ResetEnergyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ResetData",
+      "type": "keybind",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_data",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cursesandstuff/network/ResetDataMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "EnergyStart",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cursesandstuff/procedures/EnergyStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "cursedEnergy",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "MaxCEnergy",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "energyStart",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "energyMultiplyer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
       "advancements.begin_curses.descr": "Get the cursed guide from the cursed professer.",
-      "biome.cursesandstuff.corruptedzone": "Corruption Zone",
+      "key.cursesandstuff.reset_data": "Reset Data",
       "gui.cursesandstuff.curse_page_1.button_next": "Next -\u003e",
-      "item.cursesandstuff.cursed_guide": "Book of Curses",
       "gui.cursesandstuff.curse_page_2.label_the_limitless_technique": "The Limitless Technique:",
+      "gui.cursesandstuff.curse_page_2.label_this_is_a_placeholder_for_the_te": "This is a placeholder for the text to come!",
+      "gui.cursesandstuff.curse_page_2.button_previous": "\u003c- Previous",
+      "biome.cursesandstuff.corruptedzone": "Corruption Zone",
+      "item.cursesandstuff.cursed_guide": "Book of Curses",
       "gui.cursesandstuff.curse_page_1.label_book_of_techniques": "Book of Techniques",
       "entity.minecraft.villager.cursesandstuff.cursedseller": "Cursed Professer",
       "advancements.begin_curses.title": "It\u0027s just the beginning...",
-      "gui.cursesandstuff.curse_page_2.label_this_is_a_placeholder_for_the_te": "This is a placeholder for the text to come!",
-      "gui.cursesandstuff.curse_page_1.label_this_is_a_place_holder_for_the_t": "This is a place holder for the text to come!",
-      "gui.cursesandstuff.curse_page_2.button_previous": "\u003c- Previous"
+      "gui.cursesandstuff.curse_page_1.label_this_is_a_place_holder_for_the_t": "This is a place holder for the text to come!"
     }
   },
   "foldersRoot": {
@@ -188,11 +325,10 @@
   },
   "workspaceSettings": {
     "modid": "cursesandstuff",
-    "modName": "cursesandstuff",
+    "modName": "CurseCraft",
     "version": "0.0.1",
     "description": "Adds cursed techniques and more from Jujitsu Kaisen!",
     "author": "Ghostx10",
-    "websiteURL": "https://mcreator.net",
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
@@ -201,7 +337,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "credits": "DISCLAIMER: All concepts/abilities used are from Jujistu Kaisen, by Gege Akutami. I DO NOT OWN ANYTHING TAKEN FROM JUJISTU KAISEN",
     "modElementsPackage": "net.mcreator.cursesandstuff",
     "lockBaseModFiles": false
   },

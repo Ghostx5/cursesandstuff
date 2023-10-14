@@ -1,0 +1,12 @@
+{
+  "_fv": 47,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "BACKSLASH",
+    "keyBindingName": "Reset Data",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "ResetEnergy"
+    }
+  }
+}
