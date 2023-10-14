@@ -19,6 +19,135 @@
           "x": 19,
           "y": 215
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blankexp.png",
+          "use1Xscale": false,
+          "x": 123,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fullexp.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FirstBarTrig"
+          },
+          "x": 123,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fullexp.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SeconBarTrig"
+          },
+          "x": 133,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fullexp.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ThirBarTrig"
+          },
+          "x": 143,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fullexp.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FourBarTrig"
+          },
+          "x": 153,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fullexp.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FiveBarTrig"
+          },
+          "x": 163,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fullexp.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SixBarTrig"
+          },
+          "x": 173,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fullexp.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SevBarTrig"
+          },
+          "x": 183,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fullexp.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EigBarTrig"
+          },
+          "x": 193,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fullexp.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "NinBarTrig"
+          },
+          "x": 203,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fullexp.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TenBarTrig"
+          },
+          "x": 213,
+          "y": 188
+        }
       }
     ],
     "baseTexture": "",
