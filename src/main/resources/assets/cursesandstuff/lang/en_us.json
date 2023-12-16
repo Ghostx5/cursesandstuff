@@ -10,5 +10,6 @@
   "gui.cursesandstuff.curse_page_1.label_book_of_techniques": "Book of Techniques",
   "entity.minecraft.villager.cursesandstuff.cursedseller": "Cursed Professer",
   "advancements.begin_curses.title": "It\u0027s just the beginning...",
-  "gui.cursesandstuff.curse_page_1.label_this_is_a_place_holder_for_the_t": "This is a place holder for the text to come!"
+  "gui.cursesandstuff.curse_page_1.label_this_is_a_place_holder_for_the_t": "This is a place holder for the text to come!",
+  "key.cursesandstuff.cast_veil": "Cast Veil"
 }

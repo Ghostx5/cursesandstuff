@@ -33,10 +33,12 @@ public class CursesandstuffModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping CAST_VEIL = new KeyMapping("key.cursesandstuff.cast_veil", GLFW.GLFW_KEY_V, "key.categories.misc");
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(RESET_DATA);
+		event.register(CAST_VEIL);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
